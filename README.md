@@ -4,11 +4,11 @@
 
 Following technologies are used in this project
 
-Nginx <br/>
-Tomcat <br/>
-RabbitMQ \
-Memcached <br/>
-MySQL <br/>
+Nginx {Elastic Load Balancer} <br/> 
+Tomcat {Application server} <br/> 
+RabbitMQ {Backend server} \ 
+Memcached {Backend server} <br/>
+MySQL {Backend server} <br/>
 
 [![diagram.png](https://i.postimg.cc/25R2p2Hc/diagram.png)](https://postimg.cc/tskhWtGW)
 
@@ -18,14 +18,33 @@ The request will be coming from a client browser and traffic will be redirected 
 
 Following AWS services will be used in this project
 
--- Route53 <br/>
+-- Route53 <br/> 
 -- IAM <br/>
 -- ACM <br/>
 -- VPC <br/>
--- EC2 <br/>
+-- EC2 <br/> 
 
 Order of operations are described below
 
 [![Screenshot-2022-10-17-at-18-43-19.png](https://i.postimg.cc/QdXQZC17/Screenshot-2022-10-17-at-18-43-19.png)](https://postimg.cc/F7Bdj9PF)
+
+After spin up EC2 instances we will create artifact on our laptop ,in order to do that we should have following application on our local laptop ,let's verify it.
+
+```
+\King Julien$ mvn -version
+
+Apache Maven 3.8.5 (3599d3414f046de2324203b78ddcf9b5e4388aa0)
+Maven home: /Users/zhajili/Applications/apache-maven-3.8.5
+Java version: 1.8.0_332, vendor: Amazon.com Inc., runtime: /Users/zhajili/Library/Java/JavaVirtualMachines/corretto-1.8.0_332/Contents/Home/jre
+Default locale: en_GB, platform encoding: UTF-8
+OS name: "mac os x", version: "12.6", arch: "x86_64", family: "mac"
+
+\King Julien$ java -version
+
+openjdk version "1.8.0_332"
+OpenJDK Runtime Environment Corretto-8.332.08.1 (build 1.8.0_332-b08)
+OpenJDK 64-Bit Server VM Corretto-8.332.08.1 (build 25.332-b08, mixed mode)
+
+```
 
 
