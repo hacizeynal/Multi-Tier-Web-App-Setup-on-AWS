@@ -24,4 +24,8 @@ Following AWS services will be used in this project
 -- VPC <br/>
 -- EC2 <br/>
 
+Order of operations are described below
+
+[![Screenshot-2022-10-17-at-18-43-19.png](https://i.postimg.cc/QdXQZC17/Screenshot-2022-10-17-at-18-43-19.png)](https://postimg.cc/F7Bdj9PF)
+
 
