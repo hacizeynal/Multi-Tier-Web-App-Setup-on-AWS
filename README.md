@@ -188,9 +188,13 @@ devops record will point to LB DNS address ,for verification we will need to typ
 
 [![Screenshot-2022-10-17-at-22-28-17.png](https://i.postimg.cc/j5jGZxCz/Screenshot-2022-10-17-at-22-28-17.png)](https://postimg.cc/d7zH0K21)
 
-If we will inspect certifiate we will verify that certificate is provided by Amazon.
+If we will inspect certificate we will verify that certificate is provided by Amazon.
 
 [![Screenshot-2022-10-17-at-22-30-34.png](https://i.postimg.cc/ZntXZrVL/Screenshot-2022-10-17-at-22-30-34.png)](https://postimg.cc/9RbLYq34)
+
+We can login and verify if DB is integrated correctly ,since we are retrieving credentials from MySQL.
+
+[![Screenshot-2022-10-17-at-22-41-15.png](https://i.postimg.cc/BZ22vxm1/Screenshot-2022-10-17-at-22-41-15.png)](https://postimg.cc/c64v98ys)
 
 
 
