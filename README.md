@@ -26,7 +26,7 @@ Following AWS services will be used in this project
 -- VPC <br/>
 -- EC2 <br/> 
 
-Order of operations are described below
+#### Order of operations
 
 [![Screenshot-2022-10-17-at-18-43-19.png](https://i.postimg.cc/QdXQZC17/Screenshot-2022-10-17-at-18-43-19.png)](https://postimg.cc/F7Bdj9PF)
 
@@ -48,6 +48,7 @@ OpenJDK Runtime Environment Corretto-8.332.08.1 (build 1.8.0_332-b08)
 OpenJDK 64-Bit Server VM Corretto-8.332.08.1 (build 25.332-b08, mixed mode)
 
 ```
+#### Set up Route53
 
 Before creating artifacts we will update application.properties in src/resources with new DNS name which we created on Route53 on AWS.
 
@@ -63,6 +64,9 @@ db.devops.com 172.18.161.112
 rabbit.devops.com 172.18.174.49
 memcache.devops.com 172.18.164.196
 ```
+
+#### Create Artifact via Maven and upload to Tomcat EC2
+
 We will execute mvn -install command on the directory where our pom.xml exists and after successfull execution target directory will be created.
 
 ```
@@ -170,7 +174,7 @@ Escape character is '^]'.
 R
 5.5.68-MariaDB-$jmb&1�+DU_\1}G(0YPmysql_native_password
 ```
-
+#### Set up Elastic Load Balancer
 
 
 
