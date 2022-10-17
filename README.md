@@ -6,7 +6,7 @@ Following technologies are used in this project
 
 Nginx {Elastic Load Balancer} <br/> 
 Tomcat {Application server} <br/> 
-RabbitMQ {Backend server} \ 
+RabbitMQ {Backend server} <br/> 
 Memcached {Backend server} <br/>
 MySQL {Backend server} <br/>
 
@@ -51,7 +51,7 @@ We will execute mvn -install command on the directory where our pom.xml exists.
 
 Before creating artifacts we will update application.properties in src/resources with new DNS name which we created on Route53 on AWS.
 
-Following internal IP addresses with respective DNS names are created
+Following internal IP addresses with respective DNS names are created ,internal IP address will be changed when we create new EC2 instance.
 
 ```
 db.devops.com 172.18.161.112
