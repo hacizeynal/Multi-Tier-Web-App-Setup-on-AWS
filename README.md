@@ -28,7 +28,7 @@ Order of operations are described below
 
 [![Screenshot-2022-10-17-at-18-43-19.png](https://i.postimg.cc/QdXQZC17/Screenshot-2022-10-17-at-18-43-19.png)](https://postimg.cc/F7Bdj9PF)
 
-After spin up EC2 instances we will create artifact on our laptop ,in order to do that we should have following application on our local laptop ,let's verify it.
+After spin up EC2 instances we will create artifact on our laptop ,in order to do that we should have following applications on our local laptop ,let's verify it.
 
 ```
 \King Julien$ mvn -version
@@ -46,5 +46,18 @@ OpenJDK Runtime Environment Corretto-8.332.08.1 (build 1.8.0_332-b08)
 OpenJDK 64-Bit Server VM Corretto-8.332.08.1 (build 25.332-b08, mixed mode)
 
 ```
+
+We will execute mvn -install command on the directory where our pom.xml exists.
+
+Before creating artifacts we will update application.properties in src/resources with new DNS name which we created on Route53 on AWS.
+
+Following internal IP addresses with respective DNS names are created
+
+```
+db.devops.com 172.18.161.112
+rabbit.devops.com 172.18.174.49
+memcache.devops.com 172.18.164.196
+```
+
 
 
