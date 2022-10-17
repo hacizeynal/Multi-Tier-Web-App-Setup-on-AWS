@@ -16,7 +16,7 @@ MySQL {Backend server} <br/>
 
 The request will be coming from a client browser and traffic will be redirected to the Nginx server, Nginx will be used as Load Balancer, it will forward requests to the Tomcat Application Server, Apache will be our server which our Java Application will be running. We can use shared storage as NFS. Our application server will forward traffic to the RabbitMQ which will be used as Message Broker. Message Broker will forward requests to the Memcached for Database caching which will cache our queries for MySQL.
 
-5 EC2 instance will be created on AWS Cloud and each EC2 will be created with respective user-data/script.
+4 EC2 instance will be created on AWS Cloud and each EC2 will be created with respective user-data/script.
 
 Following AWS services will be used in this project
 
@@ -175,6 +175,22 @@ R
 5.5.68-MariaDB-$jmb&1�+DU_\1}G(0YPmysql_native_password
 ```
 #### Set up Elastic Load Balancer
+
+We will create Application Load Balancer and create TARGET Group with port 443 ,we will attach our certificate which we created via ACM.For Load balancer we will add Security group which will allow only port 443 towards LB.
+
+[![Screenshot-2022-10-17-at-22-26-15.png](https://i.postimg.cc/HL0pfkpR/Screenshot-2022-10-17-at-22-26-15.png)](https://postimg.cc/sBXdWyG4)
+
+
+[![Screenshot-2022-10-17-at-22-27-15.png](https://i.postimg.cc/zDQ12gC3/Screenshot-2022-10-17-at-22-27-15.png)](https://postimg.cc/MX14vXr8)
+
+After creating LB ,we will need to create CNAME record on our GoDaddy account ,as you we see below 
+devops record will point to LB DNS address ,for verification we will need to type https://devops.zhajili.com in our web browser.
+
+[![Screenshot-2022-10-17-at-22-28-17.png](https://i.postimg.cc/j5jGZxCz/Screenshot-2022-10-17-at-22-28-17.png)](https://postimg.cc/d7zH0K21)
+
+If we will inspect certifiate we will verify that certificate is provided by Amazon.
+
+[![Screenshot-2022-10-17-at-22-30-34.png](https://i.postimg.cc/ZntXZrVL/Screenshot-2022-10-17-at-22-30-34.png)](https://postimg.cc/9RbLYq34)
 
 
 
