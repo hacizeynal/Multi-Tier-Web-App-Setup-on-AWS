@@ -1,6 +1,6 @@
-# Multi-Tier-Web-Application-Setup on AWS Cloud
+## Multi-Tier-Web-Application-Setup on AWS Cloud
 
-## Introduction
+### Introduction
 
 Following technologies are used in this project
 
