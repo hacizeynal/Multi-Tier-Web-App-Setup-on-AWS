@@ -53,6 +53,11 @@ Before creating artifacts we will update application.properties in src/resources
 
 Following internal IP addresses with respective DNS names are created ,internal IP address will be changed when we create new EC2 instance.
 
+Verification of Route53 DNS records
+
+[![Screenshot-2022-10-17-at-19-33-30.png](https://i.postimg.cc/vm2CCD28/Screenshot-2022-10-17-at-19-33-30.png)](https://postimg.cc/94Tx7Xjs)
+
+
 ```
 db.devops.com 172.18.161.112
 rabbit.devops.com 172.18.174.49
@@ -77,6 +82,7 @@ drwxr-xr-x   5 zhajili  staff       160 17 Oct 19:28 vprofile-v2
 \King Julien$ 
 
 ```
+
 
 
 
