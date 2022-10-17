@@ -18,10 +18,10 @@ The request will be coming from a client browser and traffic will be redirected 
 
 Following AWS services will be used in this project
 
---- Route53
---- IAM
--- ACM
--- VPC
--- EC2
+-- Route53 <br/>
+-- IAM <br/>
+-- ACM <br/>
+-- VPC <br/>
+-- EC2 <br/>
 
 
